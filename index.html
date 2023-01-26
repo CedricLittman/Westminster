@@ -12,96 +12,65 @@
 
 </head>
 
-<body style="background-color: #fafafa;">
+<body class="bg-secondary">
     <main>
 
-        <nav class="navbar navbar-expand-lg bg-light">
+        <!-- New Navbar -->
+        <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a href="/" class="justify-content-center text-dark text-decoration-none">
-
-                    <span><img src="assets/images/logo.webp" class="img-fluid" style="width: 200px;"></span>
+                <a class="navbar-brand" href="index.html"><img src="assets/images/logo.webp" alt="City of Westminster"
+                        style="width: 250px;">
                 </a>
-                <p class="navbar-brand ps-auto fs-2" href="#">Visit Westminster</p>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <div class="d-none d-lg-block container-fluid">
+                    <h2 class="text-center">Visit Westminster</h2>
+                </div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
+                    <ul class="navbar-nav nav-pills mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                            <a class="nav-link text-white" href="links.html">Links</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
+                            <a class="nav-link text-white" href="faq.html">FAQ & Contact</a>
                         </li>
                     </ul>
-
                 </div>
             </div>
         </nav>
-
-
-        <div class="container d-flex py-3 mb-4 border-bottom justify-content-center align-items-center">
-
-
-            <!-- <header> -->
-            <a href="/" class="justify-content-center text-dark text-decoration-none">
-
-                <span><img src="assets/images/logo.webp" class="img-fluid" style="width: 200px;"></span>
-            </a>
-            <div class=" ms-auto me-auto fs-2 ">
-                <span>Visit Westminster</span>
-            </div>
-            <div class=" my-auto justify-content-center">
-                <ul class="nav nav-pills">
-                    <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-                    <li class="nav-item"><a href="links.html" class="nav-link">Links</a></li>
-                    <li class="nav-item"><a href="faq.html" class="nav-link">FAQs</a></li>
-                </ul>
-            </div>
-            <!-- </header> -->
-        </div>
+        <!-- Carousel and side panels -->
 
         <section>
             <div class="container">
                 <div class="row">
                     <div class="col bg-dark text-light">
-                        <h1>Visit Westminster</h1>
-                        <p>The Westminster Employment Service (WES) is a council service and our purpose is to
-                            support
-                            the City for All Opportunity agenda by providing an employment service for
-                            Westminster
-                            residents including those who may face barriers to finding and staying in work. The
-                            team
-                            also works with local employers to support local recruitment and address skills
-                            shortages.
-                        </p>
+                        <h1 class="text-center">Visit Westminster</h1>
+                        <p>There is so much to see and do in Westminster that, although the items in this site are the
+                            main ones, there are still many more. Westminster is home to the following sites:</p>
+                        <ul>
+                            <li>Houses of Parliament</li>
+                            <li>Westminster Abbey</li>
+                            <li>Big Ben</li>
+                            <li>Trafalgar Square</li>
+                            <li>The Supreme Court</li>
+                            <li>Churchill War Rooms</li>
+                            <li>Tate Britain</li>
+                        </ul>
+
+
                     </div>
                     <div class="col-6">
 
                         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="assets/images/Horseguards.png" class="d-block w-100" alt="Horseguards">
+                                    <img src="assets/images/Abbey Road.jpg" class="d-block w-100" alt="Horseguards">
                                 </div>
                                 <div class="carousel-item">
                                     <img src="/assets/images/Westminster station.png" class="d-block w-100"
@@ -126,15 +95,13 @@
 
                     </div>
                     <div class="col bg-dark text-light">
-                        <h1>How long do we keep your information?</h1>
-                        <p>Your information will be kept after WES has stopped working with you, and then
-                            deleted
-                            after
-                            5 years. If you have a social worker, we will keep them informed of your progress,
-                            and
-                            please note that social services records are held for longer (25 years). Care Leaver
-                            records
-                            held by Social Services will not be deleted.</p>
+                        <h1 class="text-center">A Little Bit Of History</h1>
+                        <p>Westminster was an island on the badly drained Thames marshes and it had early Roman
+                            settlers.
+                            Monks were living there by 785 CE. Edward the Confessor built what became Westminster Abbey
+                            in the 11th century, it was named ‘west minster’ to distinguish it from the nearby east
+                            minster of St Paul’s Cathedral and the
+                            surrounding land became Westminster.</p>
                     </div>
                 </div>
 
@@ -160,37 +127,32 @@
             <!-- Cards below the carousel -->
             <div class="card-group mb-2">
                 <div class="card">
-                    <img src="/assets/images/doggy.jpg" class="card-img-top" alt="...">
+                    <img src="/assets/images/doggy.jpg" class="card-img-top" alt="doggy">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural
-                            lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <h5 class="card-title">Dog Friendly Accommodation in Westminster</h5>
+                        <p class="card-text">Many current and former Westminster residents have dogs Including the Queen
+                            and Boris Johnson.</p>
+                        <p class="card-text"><small class="text-muted">More information <a
+                                    href="https://www.plumguide.com/d/gb-england-london-westminster/dog-friendly"
+                                    target="_blank">here</a></small></p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/assets/images/Westminster station.jpg" class="card-img-top" alt="...">
+                    <img src="/assets/images/Margaret Thatcher cropped.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to
-                            additional
-                            content.
-                        </p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <h5 class="card-title">Margaret Thatcher</h5>
+                        <p class="card-text">A former resident of Westminster and one of the country's longest serving prime ministers who <i>also</i> revolutionised <a href="https://www.projuice.co.uk/2021/04/15/margaret-thatcher-invented-soft-serve-ice-cream/" target="_blank">ice cream manufacture.</a>
+
                     </div>
                 </div>
                 <div class="card">
                     <img src="/assets/images/Palace of Westminster night time.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural
-                            lead-in to
-                            additional content. This card has even longer content than the first to show that
-                            equal
-                            height
-                            action.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <h5 class="card-title">Palace of Westminster</h5>
+                        <p class="card-text">Westminster Palace or the Houses of Parliament and are one of
+                            the best known sites in London. It has a long and rich history and has played a central role in many important and
+                            historic moments in UK history.
+                        Guy Fawkes, a 17th Century terrorist, tried to blow up the House of Lords.</p>
                     </div>
                 </div>
             </div>
@@ -202,16 +164,16 @@
                 <div class="card-header">
                     King Charles III was crowned here
                 </div>
-                <div class="card-body bg-warning text-primary">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                <div class="card-body colour-background text-primary">
+                    <h5 class="card-title">Westminster Traffic Jam</h5>
+                    <p class="card-text">XXXXXXXXXXXXXXXXXXXX
                     </p>
 
                     <img style="max-width:50%" src="assets/images/Queen in Coach.jpg">
                 </div>
 
                 <div class="card-footer text-muted">
-                    2 days ago
+                    There are also many electric charging points
                 </div>
             </div>
             <!-- Botton card with picture on right -->
@@ -222,15 +184,13 @@
                         <div class="mx-auto col-sm-6">
                             <div class="card">
 
-                                <div class="row card-body">
+                                <div class="row card-body card-colour">
                                     <div class="col-sm-6">
-                                        <h5 class="card-title">Pay a parking ticket</h5>
-                                        <p class="card-text">Parking information in the city of Westminster,
-                                            including
-                                            pay and display, pay-to-park, and paid-for-bays.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        <h5 class="card-title text-center">You can easily get to and from Westminster</h5>
+                                        <p class="card-text">Many transport services and roads come to London from all over the world making it very easy to get to most parts of the country and the world</p>
+                                       <a class="btn btn-primary" href="https://goo.gl/maps/9TWwsLELp6Kdw4Dn6" target="_blank">Directions to & from Westminster</a>
                                     </div>
-                                    <img class="col-sm-6" src="assets/images/Crumpled Union Jack.jpg" alt="Union Jack">
+                                    <img class="col-sm-6" src="assets/images/Westminster Roundel.jpg" alt="Westminster roundel">
                                 </div>
                             </div>
                         </div>
@@ -242,18 +202,17 @@
 
 
         <!-- FOOTER -->
-        <footer class="container">
+        <footer class="container footer-colour">
             <p class="float-end"><a href="#">Back to top</a></p>
-            <p>&copy; 2017–2022 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
+            <p>&copy; 2017–2022 Company, Inc. &middot; <a href="privacy.html">Privacy</a> &middot; <a
+                    href="terms.html">Terms</a>
             </p>
 
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
                 crossorigin="anonymous"></script>
         </footer>
-        </div>
+
     </main>
 
 </body>
-
-</html>
