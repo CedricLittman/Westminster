@@ -1,6 +1,6 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
-.max-width-card {
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700) .max-width-card {
   max-width: 50% !important;
 }
 
@@ -25,5 +25,13 @@
   background-color: #bab6b3
 }
 
+center {
+  background-color: #616625;
+}
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,700)
+
+
+.carousel-image {
+  height: 430px;
+  width: 640px;
+} 
