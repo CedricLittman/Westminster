@@ -17,8 +17,8 @@
 
     <!-- New Navbar -->
     <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="assets/images/logo.webp" alt="City of Westminster"
+        <div class="container" id="top">
+            <a class="navbar-brand" href="index.html"><img src="./assets/images/logo.webp" alt="City of Westminster"
                     style="width: 250px;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -62,8 +62,8 @@
             <div class="container text-white">
                 <div class="row">
                     <div class="col-md-5">
-                        <h1>
-                            <center>There is so much to do in Westminster</center>
+                        <h1 class="text-center">
+                            There is so much to do in Westminster
                         </h1>
                         <p>There is so much in Westminster it is impossible to give an outline
                             of even many of them. An example is the Wallace Collection which is and known for its
@@ -76,7 +76,7 @@
                             lived and worked in Westminster and there are many, many more.
                         </p>
 
-                        <img src="assets/images/Wallace Collection.jpg" class="img-fluid d-none d-lg-block">
+                        <img src="./assets/images/wallace_collection.jpg" class="img-fluid d-none d-lg-block">
                     </div>
 
                     <div class="col-md-1"></div>
@@ -121,9 +121,9 @@
                                         <br>
                                         If you have your own bike always lock it up and understand that even the
                                         best locks do not deter theives much. Get your bike insured.
-                                        <br><a
-                                        href="https://www.faber.co.uk/product/9781783350551-what-goes-around/"
-                                        target="_blank">Read the book by Emily Chappell</a>, an ecellent insight into cycling in London.
+                                        <br>
+                                        Read <a href="https://www.faber.co.uk/product/9781783350551-what-goes-around/"
+                                            target="_blank">this book</a> for some good stories about cycling in London.
                                     </div>
                                 </div>
                             </div>
@@ -160,9 +160,9 @@
                                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        If you have just moved to Westminster you need to get in touch with <strong><a
-                                                href="https://www.westminster.gov.uk/" target="_blank">Westminster City
-                                                Council</strong></a> to arrange paying council tax and your parking
+                                        If you have just moved to Westminster you need to get in touch with <a
+                                            href="https://www.westminster.gov.uk/" target="_blank">Westminster City
+                                            Council</a> to arrange paying council tax and your parking
                                         permit, find out about rubbish and recycling collections and other council
                                         services.
                                         <br>
@@ -212,19 +212,19 @@
                                 <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <strong>Westminster is home to many public and private skools, including the
-                                            famous <a href="https://www.westminster.org.uk/" target="_blank">Westminster
-                                                School</a>.
-                                            <br>
-                                            It is also home to <a
-                                                href="https://fisd.westminster.gov.uk/kb5/westminster/fis/service.page?id=fmthxS9_Pqo"
-                                                target="_blank">Pimlico Academy</a> an inspirational and
-                                            professional learning environment.
-                                            Their Raising Aspirations programme and extensive
-                                            extracurricular provision support their pupils outside the
-                                            classroom.
-                                            <br>
-                                            For those looking for a school <a
+                                        Westminster is home to many public and private skools, including the
+                                        famous <a href="https://www.westminster.org.uk/" target="_blank">Westminster
+                                            School</a>.
+                                        <br>
+                                        It is also home to <a
+                                            href="https://fisd.westminster.gov.uk/kb5/westminster/fis/service.page?id=fmthxS9_Pqo"
+                                            target="_blank">Pimlico Academy</a> an inspirational and
+                                        professional learning environment.
+                                        Their Raising Aspirations programme and extensive
+                                        extracurricular provision support their pupils outside the
+                                        classroom.
+                                        <br>
+                                        For those looking for a school <a
                                             href="https://www.goodschoolsguide.co.uk/school-search/10/10/"
                                             target="_blank">this site</a> might be a good place to start.
                                     </div>
@@ -315,20 +315,45 @@
 
 
 
-        <!-- FOOTER -->
-        <footer>
-            <footer class="container footer-colour">
-                <p class="float-end"><a href="#">Back to top</a></p>
-                <p>&copy; 2017–2022 Company, Inc. &middot; <a href="privacy.html">Privacy</a> &middot; <a
-                        href="terms.html">Terms</a>
-                </p>
 
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-                    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-                    crossorigin="anonymous"></script>
-                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-                <link rel="stylesheet"
-                    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-                </container>
-            </footer>
+        <!-- FOOTER -->
+        <footer class="container footer-colour pt-2">
+
+
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col align-self-start">
+                        <p>&copy; 2017–2022 Company, Inc. &middot; <a href="privacy.html">Privacy</a> &middot; <a
+                                href="terms.html">Terms</a>
+                        </p>
+                    </div>
+                    <div class="col text-center">
+                        <p><span class="me-2"><a href="https://www.facebook.com/" target="_blank"><i
+                                        class="bi bi-facebook"></i></a></span>
+                            <span class="me-2"></span><a href="https://www.instagram.com" target="_blank"><i
+                                    class="bi bi-instagram"></i></a>
+                            </span>
+                            <span class="me-2"></span><a href="https://www.youtube.com" target="_blank"><i
+                                    class="bi bi-youtube"></i></a></span>
+                            <span class="me-2"></span><a href="https://www.linkedin.com" target="_blank"><i
+                                    class="bi bi-linkedin"></i></a></span>
+                            <span class="me-2"></span><a href="https://www.twitter.com" target="_blank"><i
+                                    class="bi bi-twitter"></i></a></span>
+                        </p>
+                    </div>
+                    <div class="col align-self-end">
+                        <p class="float-end"><a href="#top">Back to top</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+                crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        </footer>
     </body>
