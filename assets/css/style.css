@@ -1,8 +1,18 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,700) .max-width-card {
-  max-width: 50% !important;
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Jost:wght@400;700&display=swap');
+
+
+h1, h2, h3, h4, h5, h6 {
+  font: Jost, sans-serif;
 }
+
+p {
+  font:EB Garmond, serif;
+}
+
+
 
 .charles-colour {
   background-color: lightgray;

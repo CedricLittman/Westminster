@@ -16,20 +16,40 @@ The site is composed of three types of file as follows:
 
  - HTML files, these are the actual pages
  - Image files. There are three different image types and they have all been optimised
- - CSS file. This containes the styling for the HTML pages that is not taken care of by Bootstrap
+ - CSS file. This contains the styling for the HTML pages that is not taken care of by Bootstrap
 
 The HTML files are in the root directory, the other files are in the assets folder. The assets folder itself contains two subdirectories, one containing all the images (called images) and the other containing the CSS file (called css).
 
 
 # Technologies used
 
-Only HTML and CSS were allowed and the site had to be fully responsive. Bootstrap 5 was used to make the site resposive, in particular its flexbox and grid technologies and capabilities. Many Bootstrap classes were used as they improved the appearance of the site.
+Only HTML and CSS were allowed and the site had to be fully responsive. Bootstrap 5 was used to make the site responsive, in particular its flexbox and grid technologies and capabilities. Many Bootstrap classes were used as they improved the appearance of the site.
 
 Some Bootstrap classes use Java Script but, as this was invisible to the programmer,  we were told they were allowed.
 
 The head of each page contains meta tags to help the site to be found and improve its rankings in search results and contains information such as author and name.
 
 The project was developed and hosted on Github from several locations using different computers. 
+
+# Basic Structure
+
+In order to make the code easy to follow and to comply with the site specification the following were implemented and checked:
+The site was deployed on Github which was also used for version control
+The site was organised into logical directories. The pages are in the root directory, and the other files in subdirectories contained in the Assets directory. The Assets directory itself contained two directories, one containing the CSS styling file called CSS and the other, called Images, contained all the optimised images.
+
+# Accesibility
+
+All screen reader descriptors were completed so all image and navigation descriptions are accessible to those using screen readers. The pages were tested for those with colour blindness (below) and was easy navigate by persons with those disabilties. The site contains many images and these could not be made more accessibleto those with colour blindness.
+
+The site can be navigated by a Navbar and it links to the social sitesfrom icons in the footer. The code itself is organised by function and each part described by a comment line. In the code semantic tags have been used as much as possible and the function of each part is easy to discern with the semantic tags and the comments.
+
+Broken links are a common problem with websites and cause much frustraton to the visitor. Each of the links was checked several times and found to work so, a the time of submission, there were no broken links.
+
+Commenting out code is used repeatedly by e to test code and to find and analyse parts which are not working so all the code was inspected to ensure the only commented out code left were actual comments.
+
+The site has a form and each of the fields must be completed before the form can be submitted.
+
+In order to make the code and site in total accessible the code has all been indented by the format document command and all the folder and file names describe what they contain.
 
 ## Requirements and Installation
 The site only requires six HTML pages and one style page to be hosted although there are many image files too. Any additional support is called from scripts in those pages.
@@ -76,7 +96,9 @@ As sans-serif fonts are considered easier to read than serif fonts on computer s
 
 The choice of actual font was largely left to the legendary designer [Massimo Vignelli](http://www.designculture.it/interview/massimo-vignelli.html#start) who said "In the new computer age, the proliferation of typefaces and type manipulations represents a new level of visual pollution threatening our culture. Out of thousands of typefaces, all we need are a few basic ones, and trash the rest."
 
-He designed the signage for the New York subway and did much other timeless work so I simply used one of his preferred sans serif fonts for headings and one of his preferred serif fonts for the other text which is short anyway so visitors are unlikely to leave having gone that far.
+He designed the signage for the New York subway and did much other timeless work so I simply wanted to use one of his preferred sans serif fonts for headings, namely Futura, and one of his preferred serif fonts, Garamond, for the other text which is short anyway so visitors are unlikely to leave having gone that far.
+
+Unfortunately these fonts are not available to bew used without a licence so I found fonts that are commonly used as free alternatives for these. They were EB Garamond and Jost which are both available on Google fonts. The fonts and where they should be used are specified in the CSS file.
 
 Vignelli also said "The life of a designer is a life of fight: fight against the ugliness" and as there is so much class and beauty in Westminster, fighting ugliness was not difficult. Although not mentioned in the site there were 1,968 rough sleepers in Westminster making it the London borough with the highest number of rough sleepers in 2021/22. Had this been a real website I would have liked to have added a way for visitors to make a donation to a homeless charity like Crisis as I did a couple of voluntary shifts for them over Christmas.
 
@@ -147,27 +169,63 @@ A 404 page was constructed which has an optimised image and some text all of whi
 **Minor Pages**
 Links to a privacy page and a terms page were put on the footer. Each of these pages is boilerplate taken from Internet sources which are only there for the sake of completeness.
 
+## Testing ##
+Each page of the site was tested with the W3C validator and passed.
+![image info](./assets/images/readme%20images/w3c_pass_result.PNG)
+
+The CSS file was also tested with the W3C and passed.
+![image info](./assets/images/readme%20images/w3_css_pass.PNG)
+
+Each page was submitted and passed.
+
+Chrome was used to generate a Lighthouse report for each page for desktop and phone screens and the results are shown below.
+
+Home page desktop report:
+![image info](./assets/images/readme%20images/home_page_lighthouse.PNG)
+
+Home page phone report:
+![image info](./assets/images/readme%20images/home_page_lighthouse_phone.PNG)
+
+Links page desktop report:
+![image info](./assets/images/readme%20images/links_lighthouse_desktop.PNG)
+
+Links page phone report:
+![image info](./assets/images/readme%20images/links_phone_lighthouse.PNG)
+
+FAQ and Contact page desktop report:
+![image info](./assets/images/readme%20images/faq_lighthouse_desktop.PNG)
+
+FAQ and Contact page phone report:
+![image info](./assets/images/readme%20images/faq_lighthouse_phone.PNG)
+
+Other than the links page all the results were good. The reason for the Links page scoring badly in the Performance section is explained in the Further Improvements section below.
+
+
 ## Further Improvements
-The site can easily be improved by adding additional pages covering additional topics. Topics that would benefit the site inlude
+The site can be improved by adding additional pages covering additional topics. Topics that would benefit the site inlude
  - An email address and maybe a phone number for enquiries although there is a form
  - Information for anyone moving to Westminster
  - Information for anyone visiting Westminster
  - lists of businesses serving the area such as builders, estate agents, restaurants, markets, shops and some of the other information those moving to Westminster might need
- - Additionally there could be similar images for visitors including boarding establishments, tour guides, bureaux de change and other useful information
+ - Additionally there could be similar information for visitors including boarding establishments, tour guides, bureaux de change and other useful information
+ - Information about the many shows, theatres, cinemas and other entertainment available in Westminster
+ - Details of the exclusive shopping available such as Harrods, Harvey Nichols and also of attractions such as Madame Tussauds
  - A technical shortcoming of the site is that the carousel gets very small when the viewport gets to the Bootstrap small breakpoint. In a further iteration the layout from this breakdown would be altered to give a better view of the carousel from this breakpoint
+ - The Links page scored poorly in The Lighthouse reports because the page has many pictures. The pictures are nearly all jpg's and were repeatedly compressed but the file size still remained large. Many image compression sites were tried to compress the files and some of the images hardly compressed at all. One way of remedying this might have been to crop the images but this would have prejudiced the attractiveness of the images and, consequently, the appearance of the site. It was found that converting the files to webp format reduced the file size by an approximate 50%. Had time allowed this would have been done although it is not certain that the page would have scored above 90 for Performance but it would certainly have scored better.
+ - The images in the Masonry wall would be further selected so there is no longer a gap between the last image and the footer. This could either be effected by small images or one image and one card without an image and an image. With a little additional time this could be done quite easily.
 
 
-## **THANKS 
+## THANKS ##
 
 Much thanks must go to our teacher, Richard Malhotra, for tirelessly helping and instructing us even though we sometimes did not make it easy. I am also indebted to my classmates, in particular Rod Gordon, Alesio Migotti and Rosie Jones, for their help and support throughout the course.
 
-## CONCLUSION**
+## CONCLUSION ##
 
-I hope the site does Westminster justice, is visually appealing and is informative. Creating it has taught me how to create sites without HTML authoring packages such as Dreamweaver or Wordpress, and has given me the ability to create a site from first principles. Learning to use Bootstrap has enabled me to create fully responsive sites so they can be viewed with any device. 
+I hope the site does Westminster justice, is visually appealing and is informative. I hope it also follows its design objectives of being easy to read, easy to navigate and easy clear to find anything. Creating it has taught me how to create sites without HTML authoring packages such as Dreamweaver or Wordpress, and has given me the ability to create a site from first principles. Learning to use Bootstrap has enabled me to create fully responsive sites so they can be viewed with any device. 
 
 Designing the site really gave me an understanding of the importance of the five planes of user experience and how important it is to start from there rather than from wanting to use a new technology or method and also of the importance of good design.
 
-The groundwork has been laid for a much bigger site and adding pages would not be difficult.
+The groundwork has been laid for a much bigger site and adding pages would not be difficult. The bigger site could also be fully responsive and, therefore, could be viwed on any device.
 
 
  
